@@ -1,75 +1,43 @@
-var myFullpage = new fullpage('#fullpage', {
-	//Navigation
-	menu: '#menu',
-	lockAnchors: false,
-	anchors:['firstPage', 'secondPage'],
-	navigation: false,
-	navigationPosition: 'right',
-	navigationTooltips: ['firstSlide', 'secondSlide'],
-	showActiveTooltip: false,
-	slidesNavigation: false,
-	slidesNavPosition: 'bottom',
+var scroll = new SmoothScroll('a[href*="#"]', {
+  // Selectors
+  ignore: "[data-scroll-ignore]", // Selector for links to ignore (must be a valid CSS selector)
+  header: null, // Selector for fixed headers (must be a valid CSS selector)
+  topOnEmptyHash: true, // Scroll to the top of the page for links with href="#"
 
-	//Scrolling
-	css3: true,
-	scrollingSpeed: 700,
-	autoScrolling: true,
-	fitToSection: true,
-	fitToSectionDelay: 1000,
-	scrollBar: false,
-	easing: 'easeInOutCubic',
-	easingcss3: 'ease',
-	loopBottom: false,
-	loopTop: false,
-	loopHorizontal: true,
-	continuousVertical: false,
-	continuousHorizontal: false,
-	scrollHorizontally: false,
-	interlockedSlides: false,
-	dragAndMove: false,
-	offsetSections: false,
-	resetSliders: false,
-	fadingEffect: false,
-	normalScrollElements: '#element1, .element2',
-	scrollOverflow: false,
-	scrollOverflowReset: false,
-	scrollOverflowOptions: null,
-	touchSensitivity: 15,
-	bigSectionsDestination: null,
+  // Speed & Duration
+  speed: 500, // Integer. Amount of time in milliseconds it should take to scroll 1000px
+  speedAsDuration: false, // If true, use speed as the total duration of the scroll animation
+  durationMax: null, // Integer. The maximum amount of time the scroll animation should take
+  durationMin: null, // Integer. The minimum amount of time the scroll animation should take
+  clip: true, // If true, adjust scroll distance to prevent abrupt stops near the bottom of the page
+  offset: function(anchor, toggle) {
+    // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+    // This example is a function, but you could do something as simple as `offset: 25`
 
-	//Accessibility
-	keyboardScrolling: true,
-	animateAnchor: true,
-	recordHistory: true,
+    // An example returning different values based on whether the clicked link was in the header nav or not
+    if (toggle.classList.closest(".my-header-nav")) {
+      return 25;
+    } else {
+      return 50;
+    }
+  },
 
-	//Design
-	controlArrows: true,
-	verticalCentered: true,
-	sectionsColor : ['#ccc', '#fff'],
-	paddingTop: '3em',
-	paddingBottom: '10px',
-	fixedElements: '#header, .footer',
-	responsiveWidth: 0,
-	responsiveHeight: 0,
-	responsiveSlides: false,
-	parallax: false,
-	parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
-	cards: false,
-	cardsOptions: {perspective: 100, fadeContent: true, fadeBackground: true},
+  // Easing
+  easing: "easeInOutCubic", // Easing pattern to use
+  customEasing: function(time) {
+    // Function. Custom easing pattern
+    // If this is set to anything other than null, will override the easing option above
 
-	//Custom selectors
-	sectionSelector: '.section',
-	slideSelector: '.slide',
+    // return <your formulate with time as a multiplier>
 
-	lazyLoading: true,
+    // Example: easeInOut Quad
+    return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+  },
 
-	//events
-	onLeave: function(origin, destination, direction){},
-	afterLoad: function(origin, destination, direction){},
-	afterRender: function(){},
-	afterResize: function(width, height){},
-	afterReBuild: function(){},
-	afterResponsive: function(isResponsive){},
-	afterSlideLoad: function(section, origin, destination, direction){},
-	onSlideLeave: function(section, origin, destination, direction){}
+  // History
+  updateURL: true, // Update the URL on scroll
+  popstate: true, // Animate scrolling with the forward/backward browser buttons (requires updateURL to be true)
+
+  // Custom Events
+  emitEvents: true // Emit custom events
 });

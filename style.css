@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -23,7 +26,7 @@ body {
   left: 75%;
   top: 65%;
   transform: translate(-50%, -50%);
-  font-size: 150px;
+  font-size: 170px;
   font-family: "Montserrat", sans-serif;
   color: white;
   /* background: url(./space.jpg);
@@ -35,10 +38,12 @@ body {
   display: inline;
   text-transform: uppercase;
   padding: 15px;
+}
+.top-nav li a {
   color: white;
   transition: 1s all;
 }
-.top-nav li:hover {
+.top-nav li a:hover {
   color: #b0adb3;
 }
 
@@ -91,7 +96,7 @@ a {
 
 #section2 {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   position: relative;
   background: white;
   background-size: cover;
@@ -129,7 +134,7 @@ a {
 #section3 {
   margin-top: 50px;
   width: 100vw;
-  height: 70vh;
+  height: 80vh;
   position: relative;
   background: linear-gradient(#6002ee, #6002eefa);
 }
@@ -142,7 +147,7 @@ a {
 
   text-transform: uppercase;
   text-align: center;
-  font-size: 40px;
+  font-size: 45px;
   color: transparent;
   -webkit-text-stroke: 2px rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
@@ -150,9 +155,9 @@ a {
 }
 
 #space-x {
-  width: 50vw;
-  height: 70vh;
-  clip-path: polygon(0 0, 100% 0, 87% 100%, 0% 100%);
+  width: 60vw;
+  height: 80vh;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
 }
 
 .about-details {
@@ -166,14 +171,14 @@ a {
 }
 
 .about-details i {
-  margin-right: 10px;
+  margin-right: 50px;
   color: white;
   font-size: 20px;
 }
 
 cite {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   text-transform: uppercase;
 }
 
@@ -199,7 +204,7 @@ cite {
 }
 .secondary-button {
   position: absolute;
-  left: 75%;
+  left: 76%;
   top: 90%;
   color: rgb(255, 255, 255);
   transform: translate(-50%, -50%);
@@ -214,4 +219,128 @@ cite {
 .secondary-button:hover {
   background-color: white;
   color: rgb(0, 0, 0);
+}
+
+/* End of about me section */
+
+#section4 {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  background: white;
+}
+
+.works-header {
+  font-size: 120px;
+  margin-top: 30px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  text-align: center;
+
+  /* color: black;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  color: transparent;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 10px; */
+}
+
+.works-wrapper {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.items {
+  position: relative;
+  opacity: 0.9;
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  transition: all 0.2s;
+  background-color: #6002ee;
+  background-size: 400px 200px;
+}
+
+.items:nth-child(1) {
+  background: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.822)),
+    url(./images/pixysos.jpeg);
+  background-size: 400px 200px;
+}
+.items:nth-child(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.822)),
+    url(./images/lineageos.png);
+  background-size: 400px 200px;
+}
+.items:nth-child(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.822)),
+    url(./images/dart.jpg);
+  background-size: 400px 200px;
+}
+.items:nth-child(4) {
+  background: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.822)),
+    url(./images/xda.png);
+  background-size: 400px 200px;
+}
+.items:nth-child(5) {
+  background: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.822)),
+    url(./images/android.png);
+  background-size: 400px 200px;
+}
+.items:nth-child(6) {
+  background: linear-gradient(rgba(0, 0, 0, 0.863), rgba(0, 0, 0, 0.822)),
+    url(./images/posp.jpg);
+  background-size: 400px 200px;
+}
+
+.items:hover {
+  transform: scale(0.98);
+}
+
+h2 {
+  font-size: 25px;
+  padding: 20px;
+  color: white;
+}
+
+.skills-features {
+  font-size: 18px;
+  padding: 10px;
+  color: white;
+
+  text-align: center;
+}
+
+/* End of section 4 */
+
+#section5 {
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+  background-color: #6002ee;
+}
+
+#elon-musk {
+  float: right;
+  height: 80vh;
+  width: 60vw;
+  clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+  overflow: hidden;
+}
+
+.inspire-header {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  transform: translate(-5%, -10%);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 45px;
+  color: transparent;
+  -webkit-text-stroke: 2px rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 10px;
 }
