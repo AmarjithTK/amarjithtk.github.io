@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+#section1 {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(#6002eed2, #6002ee70), url(./spacex.jpg);
+  background-size: cover;
+}
+
+.header-text {
+  position: absolute;
+  left: 75%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  font-size: 150px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  /* background: url(./space.jpg);
+-webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;  */
+}
+
+.top-nav li {
+  display: inline;
+  text-transform: uppercase;
+  padding: 15px;
+  color: white;
+  transition: 1s all;
+}
+.top-nav li:hover {
+  color: #b0adb3;
+}
+
+.top-nav {
+  width: 100vh;
+  background-color: red;
+}
+
+.top-nav ul {
+  float: left;
+  list-style: none;
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  transform: translate(-10%, -80%);
+}
+
+.tab {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(-5%, -50%);
+}
+.tabs {
+  background-color: rgb(201, 194, 194);
+  height: 80px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 5px;
+  position: sticky;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  line-height: 150%;
+}
+
+.elon-quote {
+  font-size: 19px;
+  text-align: justify;
+  color: white;
+  position: absolute;
+  top: 80%;
+  left: 12%;
+  transform: translate(-5%, -50%);
+}
+
+/* End of the header section */
+
+#section2 {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: white;
+  background-size: cover;
+}
+
+.header-text2 {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 120px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+
+.item img {
+  opacity: 0.9;
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  transition: all 0.2s;
+  background-image: linear-gradient(black, black);
+}
+
+.item img:hover {
+  transform: scale(1.1);
+}
+
+#section3 {
+  margin-top: 50px;
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+  background: linear-gradient(#6002ee, #6002eefa);
+}
+
+.about-header {
+  position: absolute;
+  left: 75%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  color: transparent;
+  -webkit-text-stroke: 2px rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 10px;
+}
+
+#space-x {
+  width: 50vw;
+  height: 70vh;
+  clip-path: polygon(0 0, 100% 0, 87% 100%, 0% 100%);
+}
+
+.about-details {
+  position: absolute;
+  left: 85%;
+  top: 40%;
+  transform: translate(-80%, -30%);
+
+  width: 400px;
+  height: 300px;
+}
+
+.about-details i {
+  margin-right: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+cite {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.icons {
+  padding: 20px;
+}
+
+.primary-button {
+  position: absolute;
+  left: 65%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  padding: 10px 30px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  transition: 1s smooth all;
+}
+
+.primary-button:hover {
+  background-color: #ffffffc9;
+}
+.secondary-button {
+  position: absolute;
+  left: 75%;
+  top: 90%;
+  color: rgb(255, 255, 255);
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  padding: 10px 30px;
+  background-color: transparent;
+  border-radius: 100px;
+  border: white 1px solid;
+  transition: 1s smooth all;
+}
+
+.secondary-button:hover {
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
