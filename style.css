@@ -347,13 +347,13 @@ font-family: "Montserrat", sans-serif;
 
 .contact--heading {
   font-size: 120px;
-  margin-top: 80px;
+  margin-top: 100px;
   font-family: "Montserrat";
   text-transform: uppercase;
   text-align: center; }
 
 .skills-container {
-  margin-top: 20px; }
+  margin-top: 50px; }
 
 .outer-div {
   margin-left: 30vw;
