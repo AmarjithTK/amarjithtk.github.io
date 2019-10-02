@@ -40,7 +40,7 @@ body {
   transition: 1s all; }
 
 .top-nav li a:hover {
-  color: #b0adb3; }
+  color: #bab5c0; }
 
 .top-nav {
   width: 100vh;
@@ -61,7 +61,7 @@ body {
   transition: 1s all; }
 
 .header--social i:hover {
-  color: #ada6a6; }
+  color: #646060; }
 
 .tab {
   position: absolute;
@@ -329,7 +329,8 @@ h2 {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  margin-bottom: 100px; }
 
 .contact--heading {
   font-size: 120px;
@@ -416,6 +417,41 @@ strong {
   background-color: #6002ee;
   padding: 10px 30px;
   border-radius: 100px; }
+
+footer {
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  background: linear-gradient(#6002ee, #6002eefa); }
+  footer span {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -60%); }
+  footer ul {
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -80%); }
+  footer li {
+    display: inline;
+    color: white;
+    text-transform: uppercase; }
+
+.logo-links {
+  width: 60vw;
+  margin-left: 20vw; }
+  .logo-links i {
+    color: #dfdede;
+    font-size: 35px;
+    padding: 0 30px;
+    transform: translateY(50px);
+    transition: 1s all; }
+    .logo-links i:hover {
+      color: #716d75; }
 
 /* 
   .contacts-wrapper {
