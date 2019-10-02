@@ -26,9 +26,7 @@ body {
   font-size: 170px;
   font-family: "Montserrat", sans-serif;
   color: white;
-  /* background: url(./space.jpg);
-  -webkit-background-clip: text;
-       -webkit-text-fill-color: transparent;  */ }
+}
 
 .top-nav li {
   display: inline;
@@ -36,6 +34,8 @@ body {
   padding: 15px; }
 
 .top-nav li a {
+font-family: "Montserrat", sans-serif;
+  font-weight:700;
   color: white;
   transition: 1s all; }
 
@@ -161,6 +161,8 @@ a {
   font-size: 20px; }
 
 cite {
+font-family: "Montserrat", sans-serif;
+  font-weight:700;
   color: white;
   font-size: 22px;
   text-transform: uppercase; }
@@ -178,12 +180,18 @@ cite {
   padding: 10px 30px;
   background-color: #ffffff;
   border-radius: 100px;
-  transition: 1s smooth all; }
+  transition: 1s smooth all; 
+  font-family: "Montserrat", sans-serif;
+  font-weight:700;
+  
+  }
 
 .primary-button:hover {
   background-color: #ffffffc9; }
 
 .secondary-button {
+font-family: "Montserrat", sans-serif;
+  font-weight:700;
   position: absolute;
   left: 76%;
   top: 90%;
@@ -266,6 +274,8 @@ cite {
   transform: scale(0.98); }
 
 h2 {
+font-family: "Montserrat", sans-serif;
+  font-weight:700;
   font-size: 25px;
   padding: 20px;
   color: white; }
@@ -303,6 +313,8 @@ h2 {
   letter-spacing: 10px; }
 
 .quotes {
+font-family: "Montserrat", sans-serif;
+  font-weight:700;
   position: absolute;
   left: 5%;
   top: 40%;
@@ -340,7 +352,7 @@ h2 {
   text-align: center; }
 
 .skills-container {
-  margin-top: 50px; }
+  margin-top: 30px; }
 
 .outer-div {
   margin-left: 30vw;
@@ -384,7 +396,10 @@ h2 {
 strong {
   vertical-align: middle;
   margin: 15px;
-  text-transform: uppercase; }
+  text-transform: uppercase; font-family: "Montserrat", sans-serif;
+  font-weight:700;
+  
+  }
 
 #skills--i {
   position: absolute;
@@ -394,64 +409,108 @@ strong {
   font-size: 60px;
   color: black; }
 
-.skills--p {
-  position: absolute;
-  left: 5%;
-  top: 60%;
-  transform: translate(-5%, -10%);
-  width: 300px;
-  text-align: justify;
-  font-size: 20px;
-  font-weight: 800;
-  line-height: 120%;
-  letter-spacing: 5px;
-  padding: 10px; }
+
 
 #works--link {
+font-family: "Montserrat", sans-serif;
+  font-weight:700;
   font-size: 20px;
   color: white;
   position: absolute;
-  left: 8%;
-  top: 85%;
-  transform: translate(-5%, -10%);
+  left: 10%;
+  top: 60%;
+  transform: translate(-10%, -10%);
   background-color: #6002ee;
   padding: 10px 30px;
   border-radius: 100px; }
 
 footer {
-  width: 100vw;
-  height: 50vh;
-  position: relative;
-  background: linear-gradient(#6002ee, #6002eefa); }
-  footer span {
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+    background: linear-gradient(#6002eeaf, #6002eeb9), url(./images/starship_liftoff.jpg);
+    background-position: top;
+}
+
+footer span {
+
     font-size: 20px;
     color: white;
     position: absolute;
     left: 50%;
-    top: 65%;
-    transform: translate(-50%, -60%); }
-  footer ul {
+    top: 75%;
+    transform: translate(-50%, -60%);
+}
+
+footer ul {
+font-family: "Montserrat", sans-serif;
+  font-weight:700;
     list-style: none;
     position: absolute;
     left: 50%;
-    top: 80%;
-    transform: translate(-50%, -80%); }
-  footer li {
+    top: 88%;
+    transform: translate(-50%, -80%);
+}
+
+footer li {
     display: inline;
     color: white;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+}
+
+.footer--buttons {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -80%);
+}
+
+footer #btn-white {
+    padding: 10px 40px;
+    color: black;
+    background-color: white;
+    margin-right: 5px;
+    border-radius: 100px;
+    transition: 1s all;
+}
+
+footer #btn-white:hover {
+    background-color: rgba(241, 232, 232, 0.863);
+}
+
+footer #btn-dark {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 40px;
+    margin-left: 5px;
+    border-radius: 100px;
+    transition: 1s all;
+}
+
+footer #btn-dark:hover {
+    color: black;
+    background-color: white;
+}
 
 .logo-links {
-  width: 60vw;
-  margin-left: 20vw; }
-  .logo-links i {
+    width: 60vw;
+    margin-left: 20vw;
+}
+
+.logo-links i {
     color: #dfdede;
     font-size: 35px;
     padding: 0 30px;
-    transform: translateY(50px);
-    transition: 1s all; }
-    .logo-links i:hover {
-      color: #716d75; }
+    transform: translateY(200px);
+    transition: 1s all;
+}
+
+.logo-links i:hover {
+    color: #716d75;
+}
+
 
 /* 
   .contacts-wrapper {
