@@ -1,0 +1,33 @@
+/*-------------Reusable components-------------*/
+
+.btn-white {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: black;
+    padding: 10px 30px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    transition: 1s smooth all;
+}
+
+.btn-white:hover {
+    background-color: #e9e3e3c9;
+}
+
+.btn-outlined {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 10px 30px;
+    background-color: transparent;
+    border-radius: 100px;
+    border: white 1px solid;
+    transition: 1s smooth all;
+    color: white;
+}
+
+.btn-outlined:hover {
+    background-color: white;
+    color: black;
+}
