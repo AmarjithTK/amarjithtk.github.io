@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>RevengeXX</title>
 
 
@@ -15,7 +15,9 @@
 
 </head>
 
-<body>
+<body onload="Preloader()">
+	
+	<div id="loader"></div>
 
     <div id="fullpage">
         <div class="section" id="section1">
@@ -272,6 +274,15 @@
 
 
 
+	<script>
+	
+	var preloader=document.getElementById('loader');
+	
+	function Preloader(){
+		preloader.style.display="none";
+		}
+	
+	</script>
 
     <script src="index.js"></script>
 </body>
